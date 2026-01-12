@@ -27,3 +27,11 @@ def count_obstacles(grid):
             if cell == 0:
                 count += 1
     return count
+
+def is_inside_grid(grid, row, col):
+    if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[0]):
+        return False
+    return True
+
+
+
